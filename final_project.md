@@ -1,8 +1,6 @@
 Practical Machine Learning Course Project Report
 ================================================
 
-These is a file produced during a homework assignment of Coursera's MOOC <b>Practical Machine Learning</b> from <b>Johns Hopkins Bloomberg School of Public Health</b>.  
-For more information about the several MOOCs comprised in this Specialization, please visit: [<https://www.coursera.org/specialization/jhudatascience/>](https://www.coursera.org/specialization/jhudatascience/)  
 The scripts have been solely produced, tested and executed on Windows 10 Pro and RStudio Version 0.99.486.  
 Developer: <b>Priyesh Kamat</b>  
 
@@ -216,7 +214,7 @@ Correlation Matrix of Columns in the Training Data set.
 corrplot(cor(training[, -length(names(training))]), method = "color", tl.cex = 0.5)
 ```
 
-![](Final_Project_Report_files/figure-markdown_github/unnamed-chunk-9-1.png)
+![](unnamed-chunk-9-1.png)
 
 Partitioning Training Set
 -------------------------
@@ -248,7 +246,7 @@ modelTree <- rpart(classe ~ ., data = training, method = "class")
 prp(modelTree)
 ```
 
-![](Final_Project_Report_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](unnamed-chunk-11-1.png)
 
 Now, we estimate the performance of the model on the <b>validation</b> data set.
 
